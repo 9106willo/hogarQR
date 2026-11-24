@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tareas - HogarQR</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>📋 Tareas del Hogar</h1></header>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="catalogo.html">Tareas</a>
+<a href="servicios.html">Servicios</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+<main class="card">
+<h2>Tu tarea de hoy</h2>
+<p id="tareaActual">Dale al botón para que te salga una tarea al azar, sin repetir.</p>
+<button class="btn" onclick="tareaAleatoria()">🎲 Tarea Aleatoria</button>
+<button class="btn btn2" onclick="aceptar()">Aceptar</button>
+<button class="btn" onclick="terminado()">Terminado ✅</button>
+<p id="mensaje"></p>
+<h3>Todas las tareas</h3>
+<div class="tarea">🧹 Barrer la sala</div>
+<div class="tarea">🍽️ Lavar los platos</div>
+<div class="tarea">🗑️ Sacar la basura</div>
+<div class="tarea">🚽 Limpiar el baño</div>
+<div class="tarea">🛏️ Ordenar tu cuarto</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
